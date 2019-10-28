@@ -9,7 +9,7 @@ class ThingTests(APITestCase):
     def test_read_thing(self):
         url = reverse('thing-list')
 
-        response = self.client.get(url, format='json', **{'HTTP_X_COMPANY':'kaleidos'})
+        response = self.client.get(url, format='json', **{'HTTP_X_COMPANY':'kaleido'})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_create_thing(self):
